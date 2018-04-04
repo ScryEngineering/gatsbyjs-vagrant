@@ -13,7 +13,7 @@ Vagrant.configure("2") do |config|
     apk update
     apk upgrade
     apk add nodejs
-    apk add yarn
+    apk add yarn --update-cache --repository http://dl-3.alpinelinux.org/alpine/edge/community/
     yarn global add gatsby-cli
   SHELL
 end
